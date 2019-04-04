@@ -1,15 +1,99 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Crystals Collector</title>
+    <title>Hello, world!</title>
 </head>
+
 <body>
+    <div class="game-title">
+        <h1><span class="badge badge-secondary">Crystal Game</span></h1>
+    </div>
+
+    <!-- Instructions -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-5">Game Instructions</h1>
+            <ul class="instructions">
+                <li>You will be given a random number at the start of the game.</li>
+                <br>
+                <li>There are four crystals below. By clicking on a crystal you will add a specific amount of points to
+                    your total score.</li>
+                <br>
+                <li>You win the game by matching your total score to the random number, but be careful! If you go over
+                    you lose.</li>
+                <br>
+                <li>The value of each crystal is hidden from you. The only way to figure it out is by clicking the
+                    crystal.</li>
+                <br>
+                <li>At the start of each game, the value of each crystal changes.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Center Scores Divs -->
+    <div class="scores">
+        <!-- Player Score -->
+        <div class="player-score"><strong>
+                Your Score: <br>
+                <span id="score">
+                    X
+                </span></strong>
+        </div>
+
+        <!-- Equal or Doesn't Equal -->
+        <div class="equal"><strong>
+                <span id="equals">
+                    &#8800
+                </span></strong>
+        </div>
+
+        <!-- Goal Number -->
+        <div class="goal-number"><strong>
+                Your Goal: <br>
+                <span id="goal">
+                    X
+                </span></strong>
+        </div>
+    </div>
+
+    <!-- Crystal Divs -->
+    <div class="crystal-divs">
+        <div class="one">
+            <img src="assets/images/amethyst.jpg" alt="amethyst">
+        </div>
+        <div class="two">
+            <img src="assets/images/emerald.jpg" alt="emerald">
+        </div>
+        <div class="three">
+            <img src="assets/images/ruby.jpg" alt="ruby">
+        </div>
+        <div class="four">
+            <img src="assets/images/sapphire.jpg" alt="sapphire">
+        </div>
+    </div>
 
 
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <style src="assets/javascript/game.js"></style>
 </body>
+
 </html>
