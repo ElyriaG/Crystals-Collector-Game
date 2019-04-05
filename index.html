@@ -15,7 +15,7 @@
 
 <body>
     <div class="game-title">
-        <h1><span class="badge badge-secondary">Crystal Game</span></h1>
+        <h1><span class="badge badge-secondary">Crystals Collector</span></h1>
     </div>
 
     <!-- Instructions -->
@@ -65,21 +65,36 @@
         </div>
     </div>
 
+
+
     <!-- Crystal Divs -->
     <div class="crystal-divs">
-        <div class="one">
+        <div class="Wins">
+            Your Wins: <br>
+            <span id="wins">
+                X
+            </span>
+        </div>
+        <div id="one">
             <img src="assets/images/amethyst.jpg" alt="amethyst">
         </div>
-        <div class="two">
+        <div id="two">
             <img src="assets/images/emerald.jpg" alt="emerald">
         </div>
-        <div class="three">
+        <div id="three">
             <img src="assets/images/ruby.jpg" alt="ruby">
         </div>
-        <div class="four">
+        <div id="four">
             <img src="assets/images/sapphire.jpg" alt="sapphire">
         </div>
+        <div class="Losses"> Your Losses: <br>
+            <span id="losses">
+                X
+            </span>
+        </div>
     </div>
+
+
 
 
 
@@ -93,7 +108,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <style src="assets/javascript/game.js"></style>
+    <script src="assets/javascript/game.js"></script >
 </body>
 
 </html>
