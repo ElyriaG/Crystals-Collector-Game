@@ -5,22 +5,11 @@ var losses = 0
 var playerScore = 0
 var goalNumber = 0
 
-
-// Random Goal Number
- // Creating Goal Number
- var newGoalNumber = function () {
-    for (var i = 0; i < 121; i++) {
-        goalNumber = Math.floor(Math.random() * 100 + 9);
-        $("#goal").text(goalNumber);
-    }
-    
-    };
-
-newGoalNumber()
-
-
-// Crystal Numbers
 $(document).ready(function () {
+   
+    // Crystal Numbers
+
+    // CRYSTAL ONE
     var numberOne = Math.floor(Math.random() * 3 + 1);
     $("#one").on("click", function () {
         playerScore = playerScore + numberOne
@@ -28,20 +17,23 @@ $(document).ready(function () {
 
         if (playerScore === goalNumber) {
             $("#score").text("You Won!");
-            $("#wins").text(+1);
-            newGoalNumber ();
+            wins ++;
+            $("#wins").text(wins);
+            $("#equals").text("=");
         }
-        if (playerScore > goalNumber){
+        if (playerScore > goalNumber) {
             $("#score").text("You Lost!");
-            $("#losses").text(+1);
+            losses++;
+            $("#losses").text(losses);
+            $("#equals").text("\u2260");
         }
         else {
-            console.log("You suck!")
+            console.log("Keep trying!")
         }
     });
-    console.log(numberOne);
+    console.log("Crystal 1 - " + numberOne);
 
-
+    // CRYSTAL TWO
     var numberTwo = Math.floor(Math.random() * 3 + 4);
     $("#two").on("click", function () {
         playerScore = playerScore + numberTwo
@@ -49,20 +41,23 @@ $(document).ready(function () {
 
         if (playerScore === goalNumber) {
             $("#score").text("You Won!");
-            $("#wins").text(+1);
-            newGoalNumber ();
+            wins ++;
+            $("#wins").text(wins);
+            $("#equals").text("=");
         }
-        if (playerScore > goalNumber){
+        if (playerScore > goalNumber) {
             $("#score").text("You Lost!");
-            $("#losses").text(+1);
+            losses++;
+            $("#losses").text(losses);
+            $("#equals").text("\u2260");
         }
         else {
-            console.log("You suck!")
+            console.log("Keep trying!")
         }
     });
-    console.log(numberTwo);
+    console.log("Crystal 2 - " + numberTwo);
 
-
+    // CRYSTAL THREE
     var numberThree = Math.floor(Math.random() * 3 + 7);
     $("#three").on("click", function () {
         playerScore = playerScore + numberThree
@@ -70,20 +65,23 @@ $(document).ready(function () {
 
         if (playerScore === goalNumber) {
             $("#score").text("You Won!");
-            $("#wins").text(+1);
-            newGoalNumber ();
+            wins ++;
+            $("#wins").text(wins);
+            $("#equals").text("=");
         }
-        if (playerScore > goalNumber){
+        if (playerScore > goalNumber) {
             $("#score").text("You Lost!");
-            $("#losses").text(+1);
+            losses++;
+            $("#losses").text(losses);
+            $("#equals").text("\u2260");
         }
         else {
-            console.log("You suck!")
+            console.log("Keep trying!")
         }
     });
-    console.log(numberThree);
+    console.log("crystal 3 - " + numberThree);
 
-
+    // CRYSTAL FOUR
     var numberFour = Math.floor(Math.random() * 3 + 10);
     $("#four").on("click", function () {
 
@@ -92,25 +90,43 @@ $(document).ready(function () {
 
         if (playerScore === goalNumber) {
             $("#score").text("You Won!");
-            $("#wins").text(+1);
-            newGoalNumber ();
+            wins ++;
+            $("#wins").text(wins);
+            $("#equals").text("=");
         }
-        if (playerScore > goalNumber){
+        if (playerScore > goalNumber) {
             $("#score").text("You Lost!");
-            $("#losses").text(+1);
+            losses++;
+            $("#losses").text(losses);
+            $("#equals").text("\u2260");
         }
         else {
-            console.log("You suck!")
+            console.log("Keep trying!")
         }
+        
     });
-    console.log(numberFour);
+    console.log("crystal 4 - " + numberFour);
 
 
-   
-   
-    
+    // Random Goal Number
+    var newGoalNumber = function () {
+        for (var i = 0; i < 121; i++) {
+            goalNumber = Math.floor(Math.random() * 100 + 9);
+            $("#goal").text(goalNumber);
+        }
+        
+    };
 
-    
+    // New Game Button
+    $(".NewGame").on("click", function () {
+        newGoalNumber();
+        playerScore = 0;
+        $("#score").text("0");
+    });
+
+    if (wins = 10) {
+        (".crystal-divs").html("<div class="tenor-gif-embed" data-postid="9547714" data-share-method="host" data-width="100%" data-aspect-ratio="1.0"><a href="https://tenor.com/view/youwonnothing-gif-9547714">Youwonnothing GIF</a> from <a href="https://tenor.com/search/youwonnothing-gifs">Youwonnothing GIFs</a></div><script type="text/javascript" async src="https://tenor.com/embed.js"></script>")
+        )};
 
 })
 
