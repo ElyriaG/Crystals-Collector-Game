@@ -6,30 +6,41 @@ var randomNumbers = [1,2,3,4,5,6,7,8,9,10,11,12]
 var wins = 0
 var losses = 0
 var playerScore = 0
-var goalNumber = ""
+var goalNumber = 0
 var playerChoice = ""
 
 
 // Crystal Numbers
-var numberOne = Math.floor(Math.random() * randomNumbers.length + 1);
-$("#one").on("click", function() {
-    console.log(numberOne);
-})
-
+// $(document).ready(function() {
+// var numberOne = Math.floor(Math.random() * randomNumbers.length + 1);
+// $("#one").on("click", function() {
+//     console.log(numberOne);
+//     var playerScore = playerScore + $("#score").html(numberOne);
+// })
+// })
+var playerScore = []
 var numberTwo = Math.floor(Math.random() * randomNumbers.length + 1);
 $("#two").on("click", function() {
-    console.log(numberTwo);
+    // $("#score").html(numberTwo);
+    console.log(playerScore + numberTwo);
 })
 
-var numberThree = Math.floor(Math.random() * randomNumbers.length + 1);
-$("#three").on("click", function() {
-    console.log(numberThree);
-})
+$("#score").text(playerScore);
 
-var numberFour = Math.floor(Math.random() * randomNumbers.length + 1);
-$("#four").on("click", function() {
-    console.log(numberFour);
-})
+
+
+// var numberThree = Math.floor(Math.random() * randomNumbers.length + 1);
+// $("#three").on("click", function() {
+//     console.log(numberThree);
+//     var playerScore = playerScore + $("#score").html(numberThree);
+// })
+
+// var numberFour = Math.floor(Math.random() * randomNumbers.length + 1);
+// $("#four").on("click", function() {
+//     console.log(numberFour);
+//     var playerScore = playerScore + $("#score").html(numberFour);
+// })
+
 
 
 
