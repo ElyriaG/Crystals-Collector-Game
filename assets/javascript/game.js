@@ -6,7 +6,7 @@ var playerScore = 0
 var goalNumber = 0
 
 $(document).ready(function () {
-   
+
     // Crystal Numbers
 
     // CRYSTAL ONE
@@ -17,7 +17,7 @@ $(document).ready(function () {
 
         if (playerScore === goalNumber) {
             $("#score").text("You Won!");
-            wins ++;
+            wins++;
             $("#wins").text(wins);
             $("#equals").text("=");
         }
@@ -26,6 +26,12 @@ $(document).ready(function () {
             losses++;
             $("#losses").text(losses);
             $("#equals").text("\u2260");
+        }
+        if (wins === 10) {
+            $(".crystal-divs").html('<img id="thug-life" src="https://res.cloudinary.com/teepublic/image/private/s--Sz8smB9k--/t_Preview/b_rgb:ffffff,c_limit,f_jpg,h_630,q_90,w_630/v1534735418/production/designs/3043325_0.jpg" />');
+        }
+        if (losses === 10) {
+            $(".crystal-divs").html('<img id="git-gud" src=" https://i.redd.it/e8qwz7z7gkbz.jpg" />');
         }
         else {
             console.log("Keep trying!")
@@ -41,7 +47,7 @@ $(document).ready(function () {
 
         if (playerScore === goalNumber) {
             $("#score").text("You Won!");
-            wins ++;
+            wins++;
             $("#wins").text(wins);
             $("#equals").text("=");
         }
@@ -50,6 +56,12 @@ $(document).ready(function () {
             losses++;
             $("#losses").text(losses);
             $("#equals").text("\u2260");
+        }
+        if (wins === 10) {
+            $(".crystal-divs").html('<img id="thug-life" src="https://res.cloudinary.com/teepublic/image/private/s--Sz8smB9k--/t_Preview/b_rgb:ffffff,c_limit,f_jpg,h_630,q_90,w_630/v1534735418/production/designs/3043325_0.jpg" />');
+        }
+        if (losses === 10) {
+            $(".crystal-divs").html('<img id="git-gud" src=" https://i.redd.it/e8qwz7z7gkbz.jpg" />');
         }
         else {
             console.log("Keep trying!")
@@ -65,7 +77,7 @@ $(document).ready(function () {
 
         if (playerScore === goalNumber) {
             $("#score").text("You Won!");
-            wins ++;
+            wins++;
             $("#wins").text(wins);
             $("#equals").text("=");
         }
@@ -74,6 +86,12 @@ $(document).ready(function () {
             losses++;
             $("#losses").text(losses);
             $("#equals").text("\u2260");
+        }
+        if (wins === 10) {
+            $(".crystal-divs").html('<img id="thug-life" src="https://res.cloudinary.com/teepublic/image/private/s--Sz8smB9k--/t_Preview/b_rgb:ffffff,c_limit,f_jpg,h_630,q_90,w_630/v1534735418/production/designs/3043325_0.jpg" />');
+        }
+        if (losses === 10) {
+            $(".crystal-divs").html('<img id="git-gud" src=" https://i.redd.it/e8qwz7z7gkbz.jpg" />');
         }
         else {
             console.log("Keep trying!")
@@ -90,7 +108,7 @@ $(document).ready(function () {
 
         if (playerScore === goalNumber) {
             $("#score").text("You Won!");
-            wins ++;
+            wins++;
             $("#wins").text(wins);
             $("#equals").text("=");
         }
@@ -100,10 +118,16 @@ $(document).ready(function () {
             $("#losses").text(losses);
             $("#equals").text("\u2260");
         }
+        if (wins === 10) {
+            $(".crystal-divs").html('<img id="thug-life" src="https://res.cloudinary.com/teepublic/image/private/s--Sz8smB9k--/t_Preview/b_rgb:ffffff,c_limit,f_jpg,h_630,q_90,w_630/v1534735418/production/designs/3043325_0.jpg" />');
+        }
+        if (losses === 10) {
+            $(".crystal-divs").html('<img id="git-gud" src=" https://i.redd.it/e8qwz7z7gkbz.jpg" />');
+        }
         else {
             console.log("Keep trying!")
         }
-        
+
     });
     console.log("crystal 4 - " + numberFour);
 
@@ -113,8 +137,9 @@ $(document).ready(function () {
         for (var i = 0; i < 121; i++) {
             goalNumber = Math.floor(Math.random() * 100 + 9);
             $("#goal").text(goalNumber);
+            $("#equals").text("\u2260");
         }
-        
+
     };
 
     // New Game Button
@@ -124,9 +149,8 @@ $(document).ready(function () {
         $("#score").text("0");
     });
 
-    // if (wins = 10) {
-    //     (".crystal-divs").html("<div class="tenor-gif-embed" data-postid="9547714" data-share-method="host" data-width="100%" data-aspect-ratio="1.0"> <a href="https://tenor.com/view/youwonnothing-gif-9547714">Youwonnothing GIF</a> from <a href="https://tenor.com/search/youwonnothing-gifs">Youwonnothing GIFs</a></div><script type="text/javascript" async src="https://tenor.com/embed.js"></script>")
-    //     )};
+
+
 
 })
 
