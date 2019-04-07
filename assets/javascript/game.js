@@ -124,9 +124,9 @@ $(document).ready(function () {
         $("#score").text("0");
     });
 
-    if (wins = 10) {
-        (".crystal-divs").html("<div class="tenor-gif-embed" data-postid="9547714" data-share-method="host" data-width="100%" data-aspect-ratio="1.0"><a href="https://tenor.com/view/youwonnothing-gif-9547714">Youwonnothing GIF</a> from <a href="https://tenor.com/search/youwonnothing-gifs">Youwonnothing GIFs</a></div><script type="text/javascript" async src="https://tenor.com/embed.js"></script>")
-        )};
+    // if (wins = 10) {
+    //     (".crystal-divs").html("<div class="tenor-gif-embed" data-postid="9547714" data-share-method="host" data-width="100%" data-aspect-ratio="1.0"> <a href="https://tenor.com/view/youwonnothing-gif-9547714">Youwonnothing GIF</a> from <a href="https://tenor.com/search/youwonnothing-gifs">Youwonnothing GIFs</a></div><script type="text/javascript" async src="https://tenor.com/embed.js"></script>")
+    //     )};
 
 })
 
