@@ -37,6 +37,11 @@ body {
     padding-left: 100px;
 }
 
+/* Start game button */
+#begin-game {
+    text-align: center;
+    font-weight: bolder;
+}
 /* Scores divs */
 
 .scores {
